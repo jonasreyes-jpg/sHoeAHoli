@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>sHoe-A-hoLic</title>
+
+    <link rel="icon" href="nezukochan.png" />
+    <link rel="stylesheet" type="text/css" href="shoedetails.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function increaseValue() {
+        var value = parseInt(document.getElementById("number").value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById("number").value = value;
+      }
+
+      function decreaseValue() {
+        var value = parseInt(document.getElementById("number").value, 10);
+        value = isNaN(value) ? 0 : value;
+        value < 1 ? (value = 1) : "";
+        value--;
+        document.getElementById("number").value = value;
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="Home.html" class="logo">sHoe-A-hoLic</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navbar">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Featured.html">Featured</a></li>
+        <li><a href="Shop.html">Shop</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+
+      <div class="icons">
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
+      </div>
+    </header>
+
+    <section class="shoe-details">
+      <div class="shoe-content">
+        <div class="shoe-container">
+          <div class="image1">
+            <img
+              src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/e839f55c-84d5-4030-9bcf-644e6a6463ea/revolution-6-running-shoes-5k6Jh6.png">
+
+          </div>
+          <h2>
+            Nike Revolution 6 Men's B&W<br /><br />
+            ₱2,895.00
+          </h2>
+          <div class="add-to-cart">
+            <button class="button-59" role="button">
+              Add To Cart&nbsp;&nbsp;&nbsp;<i
+                class="fa-solid fa-cart-shopping"
+              ></i>
+            </button>
+          </div>
+          <div>
+            <div class="variation">
+              <label for="shoe-var">Variation:<br /></label>
+              <select name="shoe-var" id="shoe-var">
+                <option value="Gray">Gray</option>
+                <option value="White">White</option>
+                <option value="Red">Red</option>
+              </select>
+            </div>
+            <div class="quan">
+              <div
+                class="value-button"
+                id="decrease"
+                onclick="decreaseValue()"
+                value="Decrease Value"
+              >
+                -
+              </div>
+              <input type="number" id="number" value="0" />
+              <div
+                class="value-button"
+                id="increase"
+                onclick="increaseValue()"
+                value="Increase Value"
+              >
+                +
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="specs">
+      <div class="text">
+        <h2>Product Description:</h2>
+        <p>
+          Let classic, easy-to-wear AF-1 style rise to the occasion with the
+          Nike Air Force 1 PLT.AF.ORM. Its elegantly shaped and lifted midsole
+          delivers a proud, new voice to the hoops franchise. The leather on the
+          upper breaks in easily and ages to soft perfection while the sculpted
+          collar and pillowy heel keep it comfy. Captivate your audience.
+        </p>
+      </div>
+      <div class="main-section">
+<div class="hedding-title"><h1>Star Rating System</h1></div>
+<div class="rating-part">
+<div class="average-rating">
+<h2>4.5</h2>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i class="fa fa-star-half-o" aria-hidden="true"></i>
+<p>Average Rating</p>
+</div>
+<div class="loder-ratimg">
+<div class="progress"></div>
+<div class="progress-2"></div>
+<div class="progress-3"></div>
+<div class="progress-4"></div>
+<div class="progress-5"></div>
+</div>
+<div class="start-part">
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<span>80%</span><br>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star-o"></i>
+<span>60%</span><br>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star-o"></i>
+<i aria-hidden="true" class="fa fa-star-o"></i>
+<span>40%</span><br>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star-o"></i>
+<i aria-hidden="true" class="fa fa-star-o"></i>
+<i aria-hidden="true" class="fa fa-star-o"></i>
+<span>20%</span><br>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star-o"></i>
+<i aria-hidden="true" class="fa fa-star-o"></i>
+<i aria-hidden="true" class="fa fa-star-o"></i>
+<i aria-hidden="true" class="fa fa-star-o"></i>
+<span>10%</span>
+</div>
+<div style="clear: both;"></div>
+<div class="reviews"><h1>Reviews</h1></div>
+<div class="comment-part">
+<div class="user-img-part">
+<div class="user-img">
+<img src="https://static.generated.photos/vue-static/face-generator/landing/demo-previews/skin-tone.jpg">
+</div>
+<div class="user-text">
+<h4>8 days ago</h4>
+<p>Inya Dik</p>
+<span>Report</span>
+</div>
+<div style="clear: both;"></div>
+</div>
+<div class="comment">
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star-o"></i>
+<p>These shoes are absolutely amazing! They provide excellent comfort and support, and the design is stylish. Definitely a 5-star rating from me!</p>
+</div>
+<div style="clear: both;"></div>
+</div>
+<div class="comment-part">
+<div class="user-img-part">
+<div class="user-img">
+<img src="https://static.generated.photos/vue-static/face-generator/landing/demo-previews/age.jpg">
+</div>
+<div class="user-text">
+<h4>30 days ago</h4>
+<p>Win Rool</p>
+<span>Report</span>
+</div>
+<div style="clear: both;"></div>
+</div>
+<div class="comment">
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star-o"></i>
+<i aria-hidden="true" class="fa fa-star-o"></i>
+<p>I was quite disappointed with these shoes. The fit was uncomfortable and the material felt cheap. They didn't live up to my expectations, so I would give them a 2-star rating..</p>
+</div>
+<div style="clear: both;"></div>
+</div>
+<div class="comment-part">
+<div class="user-img-part">
+<div class="user-img">
+<img src="https://i.pinimg.com/originals/ae/ec/c2/aeecc22a67dac7987a80ac0724658493.jpg">
+</div>
+<div class="user-text">
+<h4>1 days ago</h4>
+<p>Jui Choal</p>
+<span>Report</span>
+</div>
+<div style="clear: both;"></div>
+</div>
+<div class="comment">
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star-o"></i>
+<i aria-hidden="true" class="fa fa-star-o"></i>
+<i aria-hidden="true" class="fa fa-star-o"></i>
+<p>I love the look of these shoes, but unfortunately, they didn't hold up well over time. The sole started wearing out quickly, and the stitching came loose. Considering the quality issues, I would rate them 3 stars.</p>
+</div>
+<div style="clear: both;"></div>
+</div>
+<div class="comment-part">
+<div class="user-img-part">
+<div class="user-img">
+<img src="https://thenewcode.com/assets/images/thumbnails/sarah-parmenter.jpeg">
+</div>
+<div class="user-text">
+<h4>24 days ago</h4>
+<p>Emily Mins</p>
+<span>Report</span>
+</div>
+<div style="clear: both;"></div>
+</div>
+<div class="comment">
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star-o"></i>
+<i aria-hidden="true" class="fa fa-star-o"></i>
+<i aria-hidden="true" class="fa fa-star-o"></i>
+<i aria-hidden="true" class="fa fa-star-o"></i>
+<p>These shoes are decent for everyday use. They offer decent comfort and are reasonably priced. However, they lack any standout features or exceptional quality. I would give them a solid 4-star rating.</p>
+</div>
+<div style="clear: both;"></div>
+</div>
+</div>
+</div>
+</body>
+</html>
+    </section>
+  </body>
+</html>
+

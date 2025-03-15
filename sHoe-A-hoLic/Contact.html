@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us</title>
+
+    <link rel="icon" href="nezukochan.png" />
+
+    <link rel="stylesheet" type="text/css" href="contact.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="Home.html" class="logo">sHoe-A-hoLic</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navbar">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Featured.html">Featured</a></li>
+        <li><a href="Shop.html">Shop</a></li>
+        <li><a class="active" href="Contact.html">Contact</a></li>
+      </ul>
+
+      <div class="icons">
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
+      </div>
+    </header>
+
+    <div class="hero">
+      <form>
+        <h1 class="aaa">CONTACT US</h1>
+        <p class="aa">
+          Email us with any questions or inquiries or call 09916066086. We would
+          be happy to answer your questions and set up a meeting with you. We
+          can help you on what you need.
+        </p>
+        <div class="row">
+          <div class="input-group">
+            <input type="text" id="name" required />
+            <label for="name"><i class="fas fa-user"></i> Your Name</label>
+          </div>
+          <div class="input-group">
+            <input type="text" id="number" required />
+            <label for="number"
+              ><i class="fas fa-phone-square-alt"></i> Phone Number</label
+            >
+          </div>
+        </div>
+
+        <div class="input-group">
+          <input type="email" id="email" required />
+          <label for="email"
+            ><i class="fas fa-envelope"></i> E-mail Address</label
+          >
+        </div>
+        <div class="input-group">
+          <textarea id="message" rows="8" required></textarea>
+          <label for="message"
+            ><i class="fas fa-comments"></i> Enter message</label
+          >
+        </div>
+        <button type="submit"><i class="fas fa-paper-plane"></i> SUBMIT</button>
+      </form>
+    </div>
+  </body>
+</html>
